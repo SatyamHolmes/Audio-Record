@@ -8,11 +8,13 @@ else
 function findVideo(){
     console.log("searching video")
     var videoElement=document.querySelector('video');
-  //  console.log(videoElement);
+    console.log(videoElement);
     if(videoElement){
         //console.log("sent")
-        videoElement.pause();
-        videoElement.play();
+        if(!videoElement.paused){
+            videoElement.pause();
+            videoElement.play();
+        }
         videoElement.onplay= function(){
             console.log("capture started")
             try{
