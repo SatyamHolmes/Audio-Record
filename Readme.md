@@ -13,7 +13,7 @@ The recording is stored in your downloads folder of the browser with the name "R
   <li> Turn on Developer mode if it is disabled </li>
   <li> click on load unpacked </li>
   <li> Select the folder containing all the extensions files </li>
-  <li> ENjoy you have successfully installed the extension. Play any vidoe and let the extension take care of the rest </li> 
+  <li> Enjoy you have successfully installed the extension. Play any video and let the extension take care of the rest </li> 
 </ul>
   
   
