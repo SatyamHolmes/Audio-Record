@@ -12,6 +12,7 @@ function findVideo(){
     if(videoElement){
         //console.log("sent")
         videoElement.pause();
+        videoElement.play();
         videoElement.onplay= function(){
             console.log("capture started")
             try{
