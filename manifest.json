@@ -1,0 +1,21 @@
+{
+    "name": "Audio Record",
+    "version": "1.0",
+    "description": "Record an audio",
+    "manifest_version": 2,
+    "permissions": ["storage","tabCapture","activeTab","tabs","http://*/*","https://*/*"],
+    "web_accessible_resources": ["script.js"],
+    "background": { 
+                     "scripts": ["background.js"],
+                     "persistent" : true
+                  },
+
+    "browser_action":{
+                    "default_popup": "popup.html"
+                  },
+
+
+    "commands": {
+                  
+            }
+  }

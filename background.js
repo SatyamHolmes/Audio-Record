@@ -1,0 +1,21 @@
+chrome.tabs.onUpdated.addListener((tabId,changeInfo,tab)=>{
+    if(tab.url && tab.url.match(/^http/) && changeInfo.status==="complete"){
+        console.log("updated")
+        chrome.tabs.executeScript(tabId,{
+            file: "script.js"    
+        },
+        result => {
+            const lastErr = chrome.runtime.lastError;
+            if (lastErr) console.log('tab: ' + tabId + ' lastError: ' + JSON.stringify(lastErr));
+        })
+    }
+})
+
+chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
+    console.log("message recieved");
+    //var videoElement=request.vElement;
+   // console.log(videoElement);
+
+ 
+    
+})
