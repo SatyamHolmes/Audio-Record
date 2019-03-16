@@ -11,11 +11,3 @@ chrome.tabs.onUpdated.addListener((tabId,changeInfo,tab)=>{
     }
 })
 
-chrome.runtime.onMessage.addListener(function(request,sender,sendResponse){
-    console.log("message recieved");
-    //var videoElement=request.vElement;
-   // console.log(videoElement);
-
- 
-    
-})

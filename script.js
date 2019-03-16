@@ -8,9 +8,10 @@ else
 function findVideo(){
     console.log("searching video")
     var videoElement=document.querySelector('video');
-    console.log(videoElement);
+  //  console.log(videoElement);
     if(videoElement){
-        console.log("sent")
+        //console.log("sent")
+        videoElement.pause();
         videoElement.onplay= function(){
             console.log("capture started")
             try{
@@ -40,10 +41,11 @@ function findVideo(){
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
-                    alert("audio has been recorded successfully and saved in you downloads folder witht the name record.wav");
+                    alert("audio has been recorded successfully and saved in you downloads folder witht the name 'record.wav'");
                 }
-                media.start(10000);   
                 alert("audio recording Will start after you press OK. You wont hear anything for 10 seconds");
+                media.start(10000);   
+                videoElement.onplay=()=>{};
             } 
             catch (err){}
         }
