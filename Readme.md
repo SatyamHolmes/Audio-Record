@@ -6,7 +6,7 @@ The recording is saved in wav format using MS_PCM codec
 
 The recording is stored in your downloads folder of the browser with the name "Record.wav"
 
-<h3> Instructions for installation <h3>
+<h4> Instructions for installation </h4>
 <ul>
   <li> First clone this repository to your local storage and extract it in a folder</li>
   <li> Open chrome extensions setting page </li>
